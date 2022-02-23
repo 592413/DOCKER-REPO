@@ -8,7 +8,12 @@ RUN npm install
 
 COPY . .
 
-VOLUME [ "/app/feedback" ]
+#VOLUME [ "/app/feedback" ]
+
+#Using Anonymous Volumes for node_modules
+#To protect Overiding for bind_mounts
+
+VOLUME [ "/app/node_modules" ]
 
 EXPOSE 80
 
