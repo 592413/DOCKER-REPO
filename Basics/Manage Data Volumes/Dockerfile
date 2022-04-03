@@ -17,4 +17,6 @@ VOLUME [ "/app/node_modules" ]
 
 EXPOSE 80
 
-CMD ["node","server.js"]
+#CMD ["node","server.js"]
+#To use Nodemon
+CMD ["npm","start"]
